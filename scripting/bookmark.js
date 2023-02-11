@@ -32,7 +32,7 @@ function displayWebsites() {
     <div id="website-content">  
     <p class="website-name">${websitesList[i].name}</p>
     <div class="btns">
-    <a href="${websitesList[i].url}" target="_blank">
+    <a href="https://${ websitesList[i].url}" target="_blank">
     <button class="btn btnGo">Go</button>
     </a>
     <button onclick="deleteWebsite(${i})" class="btn btnDel">Delete</button>
@@ -78,6 +78,4 @@ function checks(Boolean) {
   }
 }
 
-function writeDomain() {
-  urlInput.value = "https://";
-}
+
